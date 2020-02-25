@@ -1,10 +1,10 @@
 {
   "name": "node_storage_manager",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A storage manager for nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,10 @@
   "homepage": "https://github.com/9trocode/node_storage_manager#readme",
   "dependencies": {
     "@google-cloud/storage": "^4.3.1",
+    "chai": "^4.2.0",
     "fs-extra": "^8.1.0"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "devDependencies": {
+    "mocha": "^7.0.1"
+  }
 }

@@ -16,4 +16,4 @@ class StorageFactory {
 }
 
 const storageSystem = StorageFactory.getInstance('GCLOUD');
-module.exports = storageSystem.download('media', 'text.txt');
+module.exports = storageSystem;
