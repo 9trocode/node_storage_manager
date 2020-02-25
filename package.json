@@ -27,5 +27,6 @@
   "dependencies": {
     "@google-cloud/storage": "^4.3.1",
     "fs-extra": "^8.1.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
