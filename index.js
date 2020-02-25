@@ -1,5 +1,19 @@
-const StorageSystem = require('./lib/storage-system');
+const GCLOUD = require('./lib/GoogleCloudStorageSystem');
+const NFS = require('./lib/NFSStorageSystem');
 
-module.exports = {
-    StorageSystem: StorageSystem,
-};
+class StorageFactory {
+    static getInstance(storageMode) {
+        if (!storageMode) {
+            throw new Error('Please add a storage Mode');
+        }
+        if (storageMode === 'GCLOUD') {
+            return new GCLOUD();
+        }
+        if (storageMode === 'NFS') {
+            return new NFS();
+        }
+    }
+}
+
+const storageSystem = StorageFactory.getInstance('GCLOUD');
+module.exports = storageSystem.download('media', 'text.txt');
