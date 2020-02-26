@@ -104,3 +104,24 @@ node_storage_manager allows you to switch between clients easily without reconfi
   createBucket().catch(console.error);
 
 ```
+## Versioning
+
+This library follows [Semantic Versioning](http://semver.org/).
+
+
+This library is considered to be **General Availability (GA)**. This means it
+is stable; the code surface will not change in backwards-incompatible ways
+unless absolutely necessary (e.g. because of critical security issues) or with
+an extensive deprecation period. Issues and requests against **GA** libraries
+are addressed with the highest priority.
+
+
+## Contributing
+
+Contributions welcome! See the [Contributing Guide](https://github.com/9trocode/node_storage_manager/blob/master/CONTRIBUTING.md).
+
+## License
+
+Apache Version 2.0
+
+See [LICENSE](https://github.com/9trocode/node_storage_manager/blob/master/LICENSE)
