@@ -29,6 +29,7 @@
   "homepage": "https://github.com/9trocode/node_storage_manager#readme",
   "dependencies": {
     "@google-cloud/storage": "^4.3.1",
+    "aws-sdk": "^2.626.0",
     "chai": "^4.2.0",
     "fs-extra": "^8.1.0",
     "path": "^0.12.7"
