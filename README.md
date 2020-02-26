@@ -58,7 +58,7 @@ npm i node_storage_manager
 
 
 ### Using the client library on GCLOUD
-#####node_storage_manager allows you to switch between clients easily without reconfigurations
+node_storage_manager allows you to switch between clients easily without reconfigurations
 ```javascript
   // Imports the node_storage_manager library
   const Storage = require('node_storage_manager');
