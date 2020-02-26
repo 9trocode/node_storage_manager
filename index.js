@@ -15,5 +15,5 @@ class StorageFactory {
     }
 }
 
-const storageSystem = StorageFactory.getInstance('GCLOUD');
+const storageSystem = StorageFactory;
 module.exports = storageSystem;
