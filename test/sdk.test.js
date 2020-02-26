@@ -6,8 +6,8 @@ describe('Simple Storage Test', () => {
 
     //First stage Unit Test
     it('should run', () => {
-      let StorageInstance =  storageSystem.getInstance('GCLOUD');
-        const data =  StorageInstance.download('media', 'dev_key.key', '/Users/nitrocode/tmp/');
+      let StorageInstance =  storageSystem.getInstance('CLOUDINARY');
+        const data =  StorageInstance.upload('media', '/Users/nitrocode/tmp/up.png', 'image');
           console.log(data);
     });
 
