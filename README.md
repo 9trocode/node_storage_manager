@@ -70,15 +70,13 @@ node_storage_manager allows you to switch between clients easily without reconfi
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
-  // const bucketName = 'bucket-name';
+   // let bucketName = 'bucket-name';
 
-  async function download() {
-    // Creates the new bucket
-   await StorageInstance.download('bucket', 'file', 'destination');
-    console.log(`Bucket ${bucketName} created.`);
-  }
-
-  createBucket().catch(console.error);
+    async function download(bucketName) {
+      // Creates the new bucket
+     await StorageInstance.download(bucketName, 'file', 'destination');
+      console.log(`Bucket ${bucketName} created.`);
+    }
 
 ```
 
@@ -93,15 +91,13 @@ node_storage_manager allows you to switch between clients easily without reconfi
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
-  // const bucketName = 'bucket-name';
+  // let bucketName = 'bucket-name';
 
-  async function download() {
+  async function download(bucketName) {
     // Creates the new bucket
-   await StorageInstance.download('bucket', 'file', 'destination');
+   await StorageInstance.download(bucketName, 'file', 'destination');
     console.log(`Bucket ${bucketName} created.`);
   }
-
-  createBucket().catch(console.error);
 
 ```
 ## Versioning
