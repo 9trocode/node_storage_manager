@@ -1,6 +1,6 @@
 {
   "name": "node_storage_manager",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A storage manager for nodejs",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,10 @@
     "storage",
     "manager",
     "cloud",
-    "file"
+    "file",
+    "pipe",
+    "aws",
+    "S3"
   ],
   "author": "9trocode",
   "license": "MIT",
