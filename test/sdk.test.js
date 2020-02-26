@@ -6,7 +6,8 @@ describe('Simple Storage Test', () => {
 
     //First stage Unit Test
     it('should run', () => {
-        storageSystem.upload();
+      let data =  storageSystem.upload('smc-v1-dev', '/Users/nitrocode/tmp/dev_key.key', '/Users/nitrocode/tmp/');
+      console.log(data);
     });
 
 });

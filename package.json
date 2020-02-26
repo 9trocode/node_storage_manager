@@ -27,7 +27,8 @@
   "dependencies": {
     "@google-cloud/storage": "^4.3.1",
     "chai": "^4.2.0",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^8.1.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "mocha": "^7.0.1"
