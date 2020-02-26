@@ -6,9 +6,9 @@ describe('Simple Storage Test', () => {
 
     //First stage Unit Test
     it('should run', () => {
-      let StorageInstance =  storageSystem.getInstance('AWS', '');
-          StorageInstance.download('smc-v1-dev', 'dev_key.key', '/Users/nitrocode/tmp/');
-          console.log(StorageInstance);
+      let StorageInstance =  storageSystem.getInstance('GCLOUD');
+        const data =  StorageInstance.download('media', 'dev_key.key', '/Users/nitrocode/tmp/');
+          console.log(data);
     });
 
 });

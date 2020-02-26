@@ -44,7 +44,7 @@ export AWS_SECRET_ACCESS_KEY=982u289432u48jsdfkjsr3894
 export AWS_SESSION_TOKEN (optional)
 ```
 
-Local NFS Declaration **NOTE NFS still under development i.e it won't function appropriately
+Local NFS Declaration 
 ```bash
 export MOUNT_POINT=/Users/nitrocode/bucket/
 ```
