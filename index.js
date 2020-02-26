@@ -5,16 +5,19 @@ const AWS3 = require('./lib/S3StorageSystem');
 class StorageFactory {
     static getInstance(storageMode, Region) {
         if (!storageMode) {
-            throw new Error('Please add a storage Mode');
+            throw new Error('Please add a storage Instance');
         }
         if (storageMode === 'GCLOUD') {
             return new GCLOUD();
         }
-        if (storageMode === 'AWS') {
+        else if (storageMode === 'AWS') {
             return new AWS3(Region);
         }
-        if (storageMode === 'NFS') {
+        else if (storageMode === 'NFS') {
             return new NFS();
+        }
+        else {
+            throw new Error(`Cant recognize instance of ${storageMode}, Please Specify Instance of AWS, GCLOUD, NFS`);
         }
     }
 }
