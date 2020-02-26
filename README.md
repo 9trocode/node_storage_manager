@@ -40,7 +40,7 @@ AWS S3 Declaration
 ```bash
 export AWS_ACCESS_KEY_ID=284893748923yuwfhsdkfjshkfjh
 export AWS_SECRET_ACCESS_KEY=982u289432u48jsdfkjsr3894
-AWS_SESSION_TOKEN (optional)
+export AWS_SESSION_TOKEN (optional)
 ```
 
 Local FS Declaration
