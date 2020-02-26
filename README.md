@@ -23,7 +23,7 @@ objects to users via direct download. Storage Pipe Manager is a Pipe Factory tha
   * [Installing the client library](#installing-the-client-library)
   * [Using the client library on S3](#using-the-client-library-on-aws)
   * [Using the client library Google Storage](#using-the-client-library-on-gcloud)
-* [Samples](#samples)
+* [Samples](#integration-samples)
 * [Versioning](#versioning)
 * [Contributing](#contributing)
 * [License](#license)
@@ -42,6 +42,11 @@ AWS S3 Declaration
 export AWS_ACCESS_KEY_ID=284893748923yuwfhsdkfjshkfjh
 export AWS_SECRET_ACCESS_KEY=982u289432u48jsdfkjsr3894
 export AWS_SESSION_TOKEN (optional)
+```
+
+Cloudinary Declaration
+```bash
+export CLOUDINARY_URL=cloudinary://4737858435783453:3827489jksdhfjasfhjBB@nitrocode
 ```
 
 Local NFS Declaration 
@@ -75,7 +80,7 @@ node_storage_manager allows you to switch between clients easily without reconfi
     async function download(bucketName) {
       // Creates the new bucket
      await StorageInstance.download(bucketName, 'file', 'destination');
-      console.log(`Bucket ${bucketName} created.`);
+      console.log(`file downloaded`);
     }
 
 ```
@@ -96,10 +101,56 @@ node_storage_manager allows you to switch between clients easily without reconfi
   async function download(bucketName) {
     // Creates the new bucket
    await StorageInstance.download(bucketName, 'file', 'destination');
-    console.log(`Bucket ${bucketName} created.`);
+      console.log(`file downloaded`);
   }
 
 ```
+
+### Using the client library on `CLOUDINARY`
+```javascript
+  // Imports the node_storage_manager library
+  const Storage = require('node_storage_manager');
+
+  // Set Storage Instance between AWS,GCLOUD and FS  
+  let StorageInstance =  Storage.getInstance('CLOUDINARY');
+
+  /**
+   * TODO(developer): Uncomment these variables before running the sample.
+   */
+  // let bucketName = 'bucket-name';
+
+  async function download(bucketName) {
+    // Creates the new bucket
+   await StorageInstance.download(bucketName, 'filepath', 'image or video');
+      console.log(`file downloaded`);
+  }
+```
+
+### Using the client library on `NFS`
+```javascript
+  // Imports the node_storage_manager library
+  const Storage = require('node_storage_manager');
+
+  // Set Storage Instance between AWS,GCLOUD and FS  
+  let StorageInstance =  Storage.getInstance('NFS');
+
+  /**
+   * TODO(developer): Uncomment these variables before running the sample.
+   */
+  // let bucketName = 'bucket-name';
+
+  async function download(bucketName) {
+    // Creates the new bucket
+   await StorageInstance.download(bucketName, 'file to download', 'destination e.g /Users/nitrocode/tmp/');
+      console.log(`file downloaded`);
+  }
+```
+
+
+### Integration Samples
+Still Updating README.MD file would publish soon
+
+
 ## Versioning
 
 This library follows [Semantic Versioning](http://semver.org/).
