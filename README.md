@@ -121,7 +121,7 @@ node_storage_manager allows you to switch between clients easily without reconfi
 
   async function download(bucketName) {
     // Creates the new bucket
-  let result = await StorageInstance.download(bucketName, 'filepath', 'image or video');
+  let result = await StorageInstance.upload(bucketName, 'filepath', 'image or video');
       console.log(result);
   // This way you can get all data returned from Cloudinary Client e.g result.url e.t.c
   }
