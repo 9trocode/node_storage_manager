@@ -1,6 +1,6 @@
 {
   "name": "node_storage_manager",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A storage manager for nodejs",
   "main": "index.js",
   "scripts": {
