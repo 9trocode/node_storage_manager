@@ -10,10 +10,10 @@
 > Node.js idiomatic client for [Cloud Storage]
 
 [Node - Storage Pipe Manager](https://www.npmjs.com/package/node_storage_manager) allows world-wide
-storage and retrieval of any amount of data at any time. You can use Google
-`Cloud Storage`, `AWS S3 Bucket` for a range of scenarios including serving website content,
+storage and retrieval of any amount of data at any time. You can use `Google
+Cloud Storage`, `AWS S3 Bucket` for a range of scenarios including serving website content,
 storing data for archival and disaster recovery, or distributing large data
-objects to users via direct download. Storage Pipe Manager is a Pipe Factory that allow you easily switch between `Google CLoud` `AWS S3` and `FS` without breaking anything or any extra configurations
+objects to users via direct download. Storage Pipe Manager is a Pipe Factory that allow you easily switch between `Google CLoud` `AWS S3`, `CLOUDINARY` and `FS` without breaking anything or any extra configurations
 
 **Table of contents:**
 
