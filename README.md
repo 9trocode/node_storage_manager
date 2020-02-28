@@ -185,7 +185,7 @@ both this module and all it's functions
 ```javascript
   // Imports the node_storage_manager library
   const Storage = require('node_storage_manager');
-  let StorageInstance =  Storage.getInstance('NFS', 'Asia');
+  let StorageInstance =  Storage.getInstance('AWS'or 'GD', 'Asia');
   StorageInstance.upload()
   }
 ```
