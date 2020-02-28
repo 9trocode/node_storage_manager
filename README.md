@@ -133,6 +133,7 @@ node_storage_manager allows you to switch between clients easily without reconfi
   }
 ```
 
+### Using the client library on `DigitalOcean Spaces`
 ```javascript
   // Imports the node_storage_manager library
   const Storage = require('node_storage_manager');
