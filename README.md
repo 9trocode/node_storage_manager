@@ -49,6 +49,12 @@ Cloudinary Declaration
 export CLOUDINARY_URL=cloudinary://4737858435783453:3827489jksdhfjasfhjBB@nitrocode
 ```
 
+Digital Ocean Spaces
+```bash
+export DG_ACCESS_KEY=284893748923yuwfhsdkfjshkfjh
+export DG_SECRET_KEY=982u289432u48jsdfkjsr3894
+```
+
 Local NFS Declaration 
 ```bash
 export MOUNT_POINT=/Users/nitrocode/bucket/
@@ -153,6 +159,15 @@ node_storage_manager allows you to switch between clients easily without reconfi
 
 This contains a reference to the storage-pipe module. It is a valid use case to use
 both this module and all it's functions
+
+`Note to specify region on S3 and DigitalOcean Spaces you need to pass it parameter on getInstance `
+```javascript
+  // Imports the node_storage_manager library
+  const Storage = require('node_storage_manager');
+  let StorageInstance =  Storage.getInstance('NFS', 'Asia');
+  StorageInstance.upload()
+  }
+```
 
 ### StorageInstance.download() 
 Download file from S3, AWS & NFS using storage pipe
