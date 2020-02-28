@@ -155,7 +155,7 @@ This contains a reference to the storage-pipe module. It is a valid use case to 
 both this module and all it's functions
 
 ### StorageInstance.download() 
-Download file from S3, AWS & NFS using sotrage pipe
+Download file from S3, AWS & NFS using storage pipe
 
 `parameters`:
 
@@ -164,7 +164,7 @@ Download file from S3, AWS & NFS using sotrage pipe
  * `destination` - required, where to put the file when done downloading
 
 ### StorageInstance.upload() 
-Uploads file to S3, AWS & NFS using sotrage pipe
+Uploads file to S3, AWS & NFS using storage pipe
 
 `parameters`:
  * `bucketName` - required, S3 bucket name to upload files to.
@@ -187,39 +187,39 @@ Create's Bucket in S3, AWS & NFS using sotrage pipe
 `parameters required if on GCLOUD Instance`:
  * `bucketName` - required, Bucketname to Create.
  * `location` - required, Define specific region e.g ASIA
- * `storageClass` - optinal, e.g coldline default storage or Leave the second argument blank for default settings. 
+ * `storageClass` - optional, e.g coldline default storage or Leave the second argument blank for default settings. 
 
 `parameters required if on NFS Instance`:
  * `bucketName` - required, Bucketname to Create.
 
 
 ### StorageInstance.deleteBucket() 
-Delete Bucket in S3, AWS & NFS using sotrage pipe
+Delete Bucket in S3, AWS & NFS using storage pipe
 
 `parameters required`:
  * `bucketName` - required, Bucketname to Delete.
 
 
 ### StorageInstance.listBuckets() 
-List Buckets in S3, AWS & NFS using sotrage pipe
+List Buckets in S3, AWS & NFS using storage pipe
 
 `parameters required`:
  * `None` - No parameters Required
 
 
 ### StorageInstance.listFiles() 
-List files in Bucket on S3, AWS & NFS using sotrage pipe
+List files in Bucket on S3, AWS & NFS using storage pipe
 
 `parameters required`:
  * `bucketName` - required, Bucketname to List files from.
 
 
 ### StorageInstance.deleteFile() 
-Delete file in Bucket on S3, AWS & NFS using sotrage pipe
+Delete file in Bucket on S3, AWS & NFS using storage pipe
 
 `parameters required`:
  * `bucketName` - required, Bucketname to delete file from.
- * `filename` - required, Filen to delete
+ * `filename` - required, filename to delete
 
 
 ### StorageInstance.getBucketMetadata() 
