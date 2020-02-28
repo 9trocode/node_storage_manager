@@ -133,6 +133,26 @@ node_storage_manager allows you to switch between clients easily without reconfi
   }
 ```
 
+```javascript
+  // Imports the node_storage_manager library
+  const Storage = require('node_storage_manager');
+
+  // Set Storage Instance between AWS,GCLOUD and FS  
+  let StorageInstance =  Storage.getInstance('DG', "Region e.g Asia");
+
+  /**
+   * TODO(developer): Uncomment these variables before running the sample.
+   */
+  // let bucketName = 'bucket-name';
+
+  async function download(bucketName) {
+    // Creates the new bucket
+  let result = await StorageInstance.upload(bucketName, 'filepath', 'image or video');
+      console.log(result);
+  // This way you can get all data returned from Cloudinary Client e.g result.url e.t.c
+  }
+```
+
 ### Using the client library on `NFS`
 ```javascript
   // Imports the node_storage_manager library

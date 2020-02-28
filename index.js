@@ -2,6 +2,7 @@ const GCLOUD = require('./lib/GoogleCloudStorageSystem');
 const NFS = require('./lib/NFSStorageSystem');
 const AWS3 = require('./lib/S3StorageSystem');
 const CLOUDINARY = require('./lib/CloudinaryStorageSystem');
+const DG = require('./lib/DigitalOceanStorageSystem');
 
 class StorageFactory {
     static getInstance(storageMode, Region) {
@@ -19,6 +20,9 @@ class StorageFactory {
         }
         else if (storageMode === 'CLOUDINARY') {
             return new CLOUDINARY();
+        }
+        else if (storageMode === 'DG') {
+            return new DG(Region);
         }
         else {
             throw new Error(`Cant recognize instance of ${storageMode}, Please Specify Instance of AWS, GCLOUD, NFS`);
