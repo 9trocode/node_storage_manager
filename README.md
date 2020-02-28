@@ -211,7 +211,7 @@ List Buckets in S3, AWS & NFS using storage pipe
 List files in Bucket on S3, AWS & NFS using storage pipe
 
 `parameters required`:
- * `bucketName` - required, Bucketname to List files from.
+ * `bucketName` - required, Bucketname to list files from.
 
 
 ### StorageInstance.deleteFile() 
