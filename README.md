@@ -146,10 +146,88 @@ node_storage_manager allows you to switch between clients easily without reconfi
       console.log(`file downloaded`);
   }
 ```
-
-
 ### Integration Samples
-Still Updating README.MD file would publish soon
+    ## API Documentation
+
+### StorageInstance functions
+
+This contains a reference to the storage-pipe module. It is a valid use case to use
+both this module and all it's functions
+
+### StorageInstance.download() 
+Download file from S3, AWS & NFS using sotrage pipe
+
+`parameters`:
+
+ * `bucketName` - required, S3 bucket name to download files from.
+ * `filename` - required, file to download from bucket
+ * `destination` - required, where to put the file when done downloading
+
+### StorageInstance.upload() 
+Uploads file to S3, AWS & NFS using sotrage pipe
+
+`parameters`:
+ * `bucketName` - required, S3 bucket name to upload files to.
+ * `filename` - required, file to up to bucket
+ * `destination` - optional, for renaming file during upload i.e if file bob.jpg is beign uploaded setting `destination` on upload method will use `destination` value to rename the file 
+
+`parameters required if on CLOUDINARY Instance`:
+ * `bucketName` - required, S3 bucket name to upload files to.
+ * `filename` - required, file to up to bucket
+ * `fileType` - required, Type of file to upload e.g image, video
+ 
+
+### StorageInstance.createBucket() 
+Create's Bucket in S3, AWS & NFS using sotrage pipe
+
+`parameters required if on S3 Instance`:
+ * `bucketName` - required, Bucketname to Create.
+ * `ACL` - required, Define which AWS accounts or groups are granted access and the type of access. e.g public-read
+
+`parameters required if on GCLOUD Instance`:
+ * `bucketName` - required, Bucketname to Create.
+ * `location` - required, Define specific region e.g ASIA
+ * `storageClass` - optinal, e.g coldline default storage or Leave the second argument blank for default settings. 
+
+`parameters required if on NFS Instance`:
+ * `bucketName` - required, Bucketname to Create.
+
+
+### StorageInstance.deleteBucket() 
+Delete Bucket in S3, AWS & NFS using sotrage pipe
+
+`parameters required`:
+ * `bucketName` - required, Bucketname to Delete.
+
+
+### StorageInstance.listBuckets() 
+List Buckets in S3, AWS & NFS using sotrage pipe
+
+`parameters required`:
+ * `None` - No parameters Required
+
+
+### StorageInstance.listFiles() 
+List files in Bucket on S3, AWS & NFS using sotrage pipe
+
+`parameters required`:
+ * `bucketName` - required, Bucketname to List files from.
+
+
+### StorageInstance.deleteFile() 
+Delete file in Bucket on S3, AWS & NFS using sotrage pipe
+
+`parameters required`:
+ * `bucketName` - required, Bucketname to delete file from.
+ * `filename` - required, Filen to delete
+
+
+### StorageInstance.getBucketMetadata() 
+Get metadata from GCLOUD Storage `Note these is only applicable to GCLOUD instance alone`
+
+`parameters required`:
+ * `bucketName` - required, Bucketname to fetch it's metadata
+
 
 
 ## Versioning

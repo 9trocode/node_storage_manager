@@ -6,9 +6,9 @@ describe('Simple Storage Test', () => {
 
     //First stage Unit Test
     it('should run', () => {
-      let StorageInstance =  storageSystem.getInstance('NFS');
-          StorageInstance.download('media', 'dev_key.key', '/Users/nitrocode/tmp/');
-          console.log(StorageInstance);
+      let StorageInstance =  storageSystem.getInstance('CLOUDINARY');
+        const data =  StorageInstance.upload('media', '/Users/nitrocode/tmp/up.png', 'video');
+          console.log(data);
     });
 
 });
