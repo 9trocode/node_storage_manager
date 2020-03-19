@@ -50,6 +50,7 @@
     "chai": "^4.2.0",
     "cloudinary": "^1.19.0",
     "fs-extra": "^8.1.0",
+    "minimist": "^1.2.5",
     "path": "^0.12.7"
   },
   "devDependencies": {
