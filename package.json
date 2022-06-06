@@ -49,8 +49,8 @@
     "aws-sdk": "^2.814.0",
     "chai": "^4.2.0",
     "cloudinary": "^1.19.0",
+    "minimist": "^1.2.6",
     "fs-extra": "^9.0.0",
-    "minimist": "^1.2.5",
     "path": "^0.12.7"
   },
   "devDependencies": {
